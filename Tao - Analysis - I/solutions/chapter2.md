@@ -48,6 +48,7 @@
   - By axiom of substitution and axiom 2.4 we can say $c\text{++} = b\text{++}$ which means $b=c$.
   - Hence uniqueness is also demonstrated.
 - Hence the conjunction is true.
+  
 ***
 ### Ex 2.2.3
 

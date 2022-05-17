@@ -89,17 +89,17 @@
   - Hence the conjunction is true. Hence Proved.
 - **Proof (e) :** To prove that $a \lt b \iff a\text{++ } \leq b$
   - To prove this biconditional we will prove the conjunction $( a\lt b \implies a\text{++} \leq b)\wedge(a\text{++ } \leq b \implies a \lt b)$.
-  - $a \lt b$ means that $a \leq b \wedge a \mathbb{N}eq b$. $a \leq b$ means that $b = a + m$ for some $m \in \mathbb{N}$. Using lemma 2.2.10 we know $\exists n : n\text{++ } = m$.
+  - $a \lt b$ means that $a \leq b \wedge a \neq b$. $a \leq b$ means that $b = a + m$ for some $m \in \mathbb{N}$. Using lemma 2.2.10 we know $\exists n : n\text{++ } = m$.
   - Using axiom of substitution we can say $b = a + n\text{++}$. Further using definition of addition we can say $b = (a+n)\text{++}$. Which is nothing but $b = a\text{++ } + n$. Which means $a\text{++} \leq b$.
   - Hence we have shown $a \lt b \implies a\text{++} \leq b$.
   - Now $a\text{++} \leq b$ means $a\text{++ } + m = b$ for some $m \in \mathbb{N}$. Which can be written as $(a+m)\text{++} = b$, which is $a + m\text{++ } = b$.
-  - This means that $a\leq b$. Now to prove that $a \mathbb{N}eq b$. 
+  - This means that $a\leq b$. Now to prove that $a \neq b$. 
   - If $a=b$ then it means that $m\text{++} = 0$, this is however a contradiction since by axiom 2.3 we know that $0$ is not the sucessor of any natural number. Hence it is proved.
   - Hence the conjnction is true.
 - **Proof (f) :** To prove that $a\lt b \iff b = a + d$ where $d \in \mathbb{N}-\{0\}$.
   - To prove this biconditional we will prove the conjunction $(a\lt b \implies b = a + d)\wedge(b = a + d \implies a\lt b)$
-  - $a\lt b$ means that $a\leq b \wedge a \mathbb{N}eq b$. If $a \leq b$ it means $a + m = b$ for some $m \in \mathbb{N}$, hence if we choose $m := 0$ then $a+0=b$ which by defintion of addition will mean $a=b$ this is however not possible since $a\mathbb{N}eq b$. So $m \in \mathbb{N}-\{0\}$. Hence proved that $b = a +d$ where $d$ is positive.
-  - If $b = a + d$ for positive $d$ then we can say it means $a\leq b$ as $d \in \mathbb{N} -\{0\}$ but $a \mathbb{N}eq b$ since $d \mathbb{N}eq 0$ hence this means $a\leq b \wedge a \mathbb{N}eq b$ which is nothing but $a\lt b$.
+  - $a\lt b$ means that $a\leq b \wedge a \neq b$. If $a \leq b$ it means $a + m = b$ for some $m \in \mathbb{N}$, hence if we choose $m := 0$ then $a+0=b$ which by defintion of addition will mean $a=b$ this is however not possible since $a\neq b$. So $m \in \mathbb{N}-\{0\}$. Hence proved that $b = a +d$ where $d$ is positive.
+  - If $b = a + d$ for positive $d$ then we can say it means $a\leq b$ as $d \in \mathbb{N} -\{0\}$ but $a \neq b$ since $d \neq 0$ hence this means $a\leq b \wedge a \neq b$ which is nothing but $a\lt b$.
   
 ***
 
@@ -110,12 +110,12 @@
   - By definition of addition we know that $0+m=m$ hence, $b=m$.
   - If we choose $m := b$ then the statement is true $\forall b \in \mathbb{N}$.
 - **Proof St 2 :** $a\gt b \implies a\text{++} \gt b$.
-  - $a\gt b$ means $a\geq b \wedge a \mathbb{N}eq b$. since $a\geq b$ we can say $a =b + m $ for some $m \in \mathbb{N}$. Using lemma from Ex 2.2.3 proof(d) we can write this as $a+1=b+1+m$. 
+  - $a\gt b$ means $a\geq b \wedge a \neq b$. since $a\geq b$ we can say $a =b + m $ for some $m \in \mathbb{N}$. Using lemma from Ex 2.2.3 proof(d) we can write this as $a+1=b+1+m$. 
   - Using definition of increment operator we can write this as $a\text{++} = b + m\text{++}$. Which means $a\text{++} \geq b$  as by axiom 2.2 $m\text{++} \in \mathbb{N}$. Now if $a\text{++} = b$ then $m\text{++} = 0$. 
   - This is not possible by axiom 2.3. Hence proved.
 - **Proof St 3 :** $a=b \implies a\text{++} \gt b$.
   - Using lemma from Ex 2.2.3 proof(d) we can write $a + 1 = b+1$. Which is nothing but $a\text{++}=b+1$. Since $1\in \mathbb{N}$ this means that $a\text{++}\geq b$. 
-  - If $a\text{++} = b$ then it means that $1=0$, this is not possible hence $a\text{++} \mathbb{N}eq b$. 
+  - If $a\text{++} = b$ then it means that $1=0$, this is not possible hence $a\text{++} \neq b$. 
 
 ***
 
@@ -136,3 +136,4 @@
   - $P(\text{n++})\implies P(\text{n})$ and $P(n) \implies Q(n)$ so $P(n\text{++}) \implies Q(n)$. [Syllogism].
   - Now $(P(\text{n++})\implies Q(n) )\wedge P(\text{n++})$ will give $P(\text{n++})\implies Q(\text{n++})$
 ***
+

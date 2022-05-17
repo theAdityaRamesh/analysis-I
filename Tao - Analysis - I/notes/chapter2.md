@@ -14,7 +14,7 @@
  
 # Chapter 2 : Natural Numbers
 
-****
+***
 
 ## Some Explanations
 
@@ -31,21 +31,21 @@ Here p$\implies$q translates to *if* p *then* q.
 7. *Contrapositive* is !q$\implies$!p
 8. *Objects* are entities that have certain special properties. ( They may or may not have a physical meaning/ representation.)
 
-****
+***
 
 ## Peoano's Axioms
 
 - **Axiom 2.1** : 0 is a natural number.
 - **Axiom 2.2** : If n is a natural number then n++ is also a  natural number.
-- **Axiom 2.3** : 0 is not the succesoor of any natural number. ie $\forall n \in \N : n$++ $\not ={0}$
+- **Axiom 2.3** : 0 is not the succesoor of any natural number. ie $\forall n \in \mathbb{N} : n$++ $\not ={0}$
 - **Axiom 2.4** : Different natural numbers must have different succesors. ie : $\forall n,m \text{ }  n\text{++} = m\text{++} \implies n = m$
-- **Axiom 2.5** : If a property P(n) holds P(0) and if P(n) $\implies$ P(n++) is true $\forall\N$ then P(n) holds $\forall\N$.
+- **Axiom 2.5** : If a property P(n) holds P(0) and if P(n) $\implies$ P(n++) is true $\forall\mathbb{N}$ then P(n) holds $\forall\mathbb{N}$.
 
 
 **Note** : *a priori* is what one knows before hand ie what is assumed to be true before beginning the argument or proof. *a posteiori* is what one knows to be true after the proof or argument has ended.
 
 **Note** : Induction is a useful method of proof. 
-    - To prove : there is a property P(n) that is true for all natural numbers $\N$.
+    - To prove : there is a property P(n) that is true for all natural numbers $\mathbb{N}$.
     - Step 1 : Prove the base case for (n = 0).
     - Step 2 : Assume that P(n) holds for all numbers till n and prove P(n++).
   
@@ -53,7 +53,7 @@ Here p$\implies$q translates to *if* p *then* q.
 
 **Note** : Recursive definitions can be used to assign a unique naturan number for each natural number, Thus it is possible to generate sequences using recursion.
 
-****
+***
 ## Addition
 
 pg 26 : prove that n++ = n + 1.
